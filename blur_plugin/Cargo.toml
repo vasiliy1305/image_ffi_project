@@ -1,0 +1,10 @@
+[package]
+name = "blur_plugin"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+
+
+
+# cdylib: плагин размытия

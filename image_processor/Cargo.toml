@@ -1,0 +1,6 @@
+[package]
+name = "image_processor"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]

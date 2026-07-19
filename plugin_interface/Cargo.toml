@@ -1,0 +1,11 @@
+[package]
+name = "plugin_interface"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+
+
+
+
+# (опционально) общие FFI-типы и сигнатура

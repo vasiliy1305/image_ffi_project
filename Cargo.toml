@@ -1,7 +1,7 @@
 [workspace]
 resolver = "2"
-members = [
-]
+members = ["blur_plugin","image_processor"
+, "mirror_plugin", "plugin_interface"]
 
 [workspace.package]
 version = "0.1.0"
