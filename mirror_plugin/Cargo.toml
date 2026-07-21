@@ -3,9 +3,11 @@ name = "mirror_plugin"
 version.workspace = true
 edition.workspace = true
 
+[lib]
+name = "mirror"
+crate-type = ["cdylib"]
+
 [dependencies]
-
-
-
-
-# cdylib: плагин зеркального отражения
+plugin_interface.workspace = true
+serde.workspace = true
+serde_json.workspace = true

@@ -4,8 +4,5 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
-
-
-
-
-# (опционально) общие FFI-типы и сигнатура
+thiserror.workspace = true
+serde_json.workspace = true
