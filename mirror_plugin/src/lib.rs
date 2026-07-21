@@ -2,7 +2,7 @@ use serde::Deserialize;
 use serde_json;
 use std::ffi::CStr;
 
-use plugin_interface::{PluginInterfaceError, RGBA_CHANNELS, check_img};
+use plugin_interface::{PluginInterfaceError, RGBA_CHANNELS};
 
 #[derive(Debug, Default, Deserialize)]
 #[serde(default, deny_unknown_fields)]
@@ -18,7 +18,6 @@ fn apply_mirror(
     params: &str,
 ) -> Result<(), PluginInterfaceError> {
     let settings = serde_json::from_str::<SettingsMirror>(params)?;
-    // check_img(width, height, pixels)?;
 
     if settings.vertical {
         for row in 0..height / 2 {
