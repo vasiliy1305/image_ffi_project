@@ -1,12 +1,10 @@
 use clap::Parser;
 use image::{ImageReader, RgbaImage};
+use libloading::{Library, Symbol};
+use plugin_interface::ProcessImageFn;
 use std::ffi::CString;
 use std::path::PathBuf;
 use thiserror::Error;
-
-use libloading::{Library, Symbol};
-
-use plugin_interface::{ProcessImageFn};
 
 #[derive(Debug, Parser)]
 #[command(name = "image processor")]

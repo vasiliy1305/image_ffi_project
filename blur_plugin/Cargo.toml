@@ -3,8 +3,11 @@ name = "blur_plugin"
 version.workspace = true
 edition.workspace = true
 
+[lib]
+name = "blur"
+crate-type = ["cdylib"]
+
 [dependencies]
-
-
-
-# cdylib: плагин размытия
+plugin_interface.workspace = true
+serde.workspace = true
+serde_json.workspace = true

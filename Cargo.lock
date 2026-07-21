@@ -187,6 +187,11 @@ dependencies = [
 [[package]]
 name = "blur_plugin"
 version = "0.1.0"
+dependencies = [
+ "plugin_interface",
+ "serde",
+ "serde_json",
+]
 
 [[package]]
 name = "built"
