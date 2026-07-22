@@ -55,8 +55,8 @@ fn avr_pixel_value(
 
     let col_start = col.saturating_sub(radius);
     let row_start = row.saturating_sub(radius);
-    let col_end = (col + radius).min(width - 1);
-    let row_end = (row + radius).min(height - 1);
+    let col_end = col.saturating_add(radius).min(width - 1);
+    let row_end = row.saturating_add(radius).min(height - 1);
 
     for curr_col in col_start..=col_end {
         for curr_row in row_start..=row_end {
